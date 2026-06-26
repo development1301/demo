@@ -9,9 +9,9 @@ import { BeforeAfterSection } from "@/components/sections/BeforeAfterSection";
 export default function Home() {
   return (
     <div className="flex flex-col w-full overflow-x-clip">
-      {/* Background ambient glow */}
-      <div className="fixed top-[-20%] left-[-10%] w-[50%] h-[50%] bg-accent-primary/5 blur-[150px] rounded-full pointer-events-none z-[-1]" />
-      <div className="fixed bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-accent-primary/5 blur-[150px] rounded-full pointer-events-none z-[-1]" />
+      {/* Background ambient glow - Desktop Only (Huge performance hit on mobile GPU) */}
+      <div className="hidden md:block fixed top-[-20%] left-[-10%] w-[50%] h-[50%] bg-accent-primary/5 blur-[150px] rounded-full pointer-events-none z-[-1]" />
+      <div className="hidden md:block fixed bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-accent-primary/5 blur-[150px] rounded-full pointer-events-none z-[-1]" />
       
       <HeroSection />
       <MarqueeSection />

@@ -55,7 +55,8 @@ function Service3DCard({ service, index }: { service: any, index: number }) {
   const rotateY = useMotionTemplate`${mouseXSpring}deg`;
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!ref.current) return;
+    // Disable ultra-heavy 3D calculations on mobile screens to save GPU cycles
+    if (!ref.current || window.innerWidth < 768) return;
     
     const rect = ref.current.getBoundingClientRect();
     const width = rect.width;
@@ -139,8 +140,8 @@ export function ServicesSection() {
 
   return (
     <section id="treatments" className="py-32 px-6 lg:px-16 bg-bg-surface relative overflow-hidden">
-      {/* Decorative ambient background */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent-primary/5 rounded-full blur-[120px] pointer-events-none" />
+      {/* Decorative ambient background - Hidden on mobile */}
+      <div className="hidden md:block absolute top-0 right-0 w-[500px] h-[500px] bg-accent-primary/5 rounded-full blur-[120px] pointer-events-none" />
       
       <div className="max-w-[1400px] mx-auto relative z-10">
         <ScrollReveal>

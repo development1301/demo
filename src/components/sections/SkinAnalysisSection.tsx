@@ -108,8 +108,8 @@ export function SkinAnalysisSection({ showLearnMore = false }: { showLearnMore?:
               </p>
             </div>
 
-            {/* Ultra-Premium Circular Progress Widget */}
-            <div className="flex items-center gap-6 mt-8 border-t border-border-dark/30 pt-8">
+            {/* Ultra-Premium Circular Progress Widget - Desktop Only */}
+            <div className="hidden md:flex items-center gap-6 mt-8 border-t border-border-dark/30 pt-8">
               <div className="relative w-[72px] h-[72px] flex-shrink-0 group">
                 {/* Ambient Glow */}
                 <div className="hidden md:block absolute inset-0 bg-accent-primary/10 rounded-full blur-xl group-hover:bg-accent-primary/20 transition-colors duration-500" />
