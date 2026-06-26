@@ -1,0 +1,226 @@
+{
+  "Header": {
+    "title": "New Bella Donna",
+    "subtitle": "Clinic",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "advanceMachinery": "Advance Machinery",
+      "contact": "Contact"
+    },
+    "bookAppointment": "Book Appointment"
+  },
+  "HeroSection": {
+    "subtitle": "The Art of Aesthetics",
+    "title1": "Timeless",
+    "title2": "Beauty",
+    "title3": "& Radiant Skin in Bella Donna",
+    "description": "Enhancing your natural features through advanced dermatology and bespoke aesthetic treatments designed for confidence, elegance, and lasting results.",
+    "cta": "Book Your Consultation"
+  },
+  "MarqueeSection": {
+    "treatments": {
+      "dermatology": "Dermatology",
+      "laserResurfacing": "Laser Resurfacing",
+      "botoxFillers": "Botox & Fillers",
+      "antiAging": "Anti-Aging",
+      "chemicalPeels": "Chemical Peels",
+      "prpTherapy": "PRP Therapy",
+      "skinRejuvenation": "Skin Rejuvenation",
+      "acneSolutions": "Acne Solutions"
+    }
+  },
+  "SkinAnalysisSection": {
+    "tag": "Skin Analysis",
+    "title_start": "Your journey to",
+    "title_italic": "radiant skin.",
+    "button": "Discover Services",
+    "desc": "Scroll to discover each step of our signature treatment process.",
+    "phase": "Phase {current} / 0{total}",
+    "step_label": "'{' Step {num} '}'",
+    "steps": {
+      "0": {
+        "title": "In-Depth Analysis",
+        "description": "We start with a personal skin analysis. Our specialists take the time to understand your unique skin needs and goals."
+      },
+      "1": {
+        "title": "Custom Treatment Plan",
+        "description": "We create a tailor-made plan targeting your skin type and condition, utilizing advanced techniques like microneedling and light therapy."
+      },
+      "2": {
+        "title": "Lasting Results & Advice",
+        "description": "See immediate results after treatment. We provide a clear plan for follow-up and advice on nutrition and skincare to support your skin from within."
+      }
+    }
+  },
+  "StatsSection": {
+    "stats": {
+      "0": "Years of Experience",
+      "1": "Happy Clients",
+      "2": "Treatment Options",
+      "3": "Satisfaction Rate"
+    }
+  },
+  "BeforeAfterSection": {
+    "tag": "Real Results",
+    "title_start": "Transformative",
+    "title_italic": "Outcomes",
+    "desc": "See the subtle, elegant enhancements achieved through our tailored treatment plans. Drag the slider to compare.",
+    "before": "Before",
+    "after": "After"
+  },
+  "GallerySection": {
+    "tag": "Our Environment",
+    "title_start": "A Space of",
+    "title_italic": "Serenity"
+  },
+  "CTASection": {
+    "title_start": "Begin Your",
+    "title_italic": "Transformation",
+    "button": "Request an Appointment"
+  },
+  "FounderSection": {
+    "tag": "Meet the Founder",
+    "title_start": "Driven by",
+    "title_italic": "Passion",
+    "title_end": "and Science",
+    "p1": "With over a decade of experience in advanced dermatology and aesthetic treatments, our founder established this clinic with a singular vision: to merge cutting-edge clinical science with a deeply personalized, holistic approach to skincare.",
+    "p2": "\"We believe that true skin health is not just about treating symptoms, but understanding the unique biological narrative of each individual. Our goal is to empower you to feel confident and radiant in your own skin.\"",
+    "name": "Dr. Sarah Jenkins",
+    "role": "Lead Dermatologist & Founder"
+  },
+  "PhilosophySection": {
+    "tag": "Our Guiding Philosophy",
+    "title_start": "Beneath the",
+    "title_italic": "surface.",
+    "desc": "We understand that lasting beauty starts from within. Our approach fuses clinical precision with artful aesthetics, addressing the underlying science of your skin rather than masking symptoms. Every protocol is uniquely crafted for you.",
+    "pillars": {
+      "0": "Board-certified dermatology specialists",
+      "1": "Personalized aesthetic treatment plans",
+      "2": "Medical-grade technology & innovation"
+    }
+  },
+  "ServicesSection": {
+    "tag": "Our Expertise",
+    "title_start": "Curated",
+    "title_italic": "Treatments",
+    "button": "Discover All Treatments",
+    "services": {
+      "0": {
+        "title": "Skin Health & Acne",
+        "desc": "Advanced solutions for clear, healthy skin. We address the root causes of acne for lasting results.",
+        "f0": "Deep Cleansing", "f1": "Chemical Peels", "f2": "LED Therapy"
+      },
+      "1": {
+        "title": "Botox & Fillers",
+        "desc": "Subtle enhancements that restore youthful volume and beautifully maintain your natural expressions.",
+        "f0": "Dermal Fillers", "f1": "Neuromodulators", "f2": "Lip Enhancement"
+      },
+      "2": {
+        "title": "Laser Treatments",
+        "desc": "State-of-the-art laser technology to improve skin texture and stimulate new collagen production.",
+        "f0": "Skin Resurfacing", "f1": "Hair Removal", "f2": "Pigmentation"
+      },
+      "3": {
+        "title": "Anti-Aging",
+        "desc": "Comprehensive protocols designed to reverse the signs of aging and maintain a radiant complexion.",
+        "f0": "Microneedling", "f1": "PRP Therapy", "f2": "Medical Skincare"
+      }
+    }
+  },
+  "TestimonialsSection": {
+    "tag": "Patient Stories",
+    "title_start": "Words of",
+    "title_italic": "Appreciation",
+    "testimonials": {
+      "0": {
+        "name": "Aisha M.",
+        "treatment": "Laser Resurfacing",
+        "text": "The level of care and precision here is unmatched. My skin has never looked more radiant. The staff made me feel entirely comfortable throughout the entire process."
+      },
+      "1": {
+        "name": "Sarah L.",
+        "treatment": "Botox & Fillers",
+        "text": "I wanted a very natural look, and Dr. Bella delivered exactly that. Subtle, elegant, and I feel 10 years younger without looking 'done'."
+      },
+      "2": {
+        "name": "Fatima K.",
+        "treatment": "PRP Hair Therapy",
+        "text": "After just three sessions, the difference is incredible. The clinic feels like a luxury spa rather than a medical facility. Highly recommend."
+      },
+      "3": {
+        "name": "Noor A.",
+        "treatment": "Acne Protocol",
+        "text": "Years of struggling with my skin finally resolved. They take a truly scientific and holistic approach. Forever grateful for this team."
+      }
+    }
+  },
+  "WhyChooseUsSection": {
+    "tag": "The Standard",
+    "title_start": "Why Trust",
+    "title_italic": "Us?",
+    "labels": {
+      "0": "Advanced Technology",
+      "1": "Bespoke Aesthetics",
+      "2": "Uncompromising Safety"
+    }
+  },
+  "Footer": {
+    "desc": "Elevating the standard of aesthetic medicine with precision, safety, and an artistic eye.",
+    "menu": "Menu",
+    "connect": "Connect",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "advanceMachinery": "Advance Machinery",
+      "contact": "Contact"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "whatsapp": "WhatsApp",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "© {year} New Bella Donna Clinic. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "ContactPage": {
+    "tag": "Get In Touch",
+    "title_start": "Let's Start Your",
+    "title_italic": "Journey",
+    "location": "Location",
+    "address1": "Salem Sabah Al Salem Al Sabah St",
+    "address2": "Mahboula 60001, Kuwait",
+    "whatsapp": "WhatsApp",
+    "availability": "Available 9am - 6pm",
+    "instagram": "Instagram",
+    "follow": "Follow for updates",
+    "form_title": "Send an Inquiry",
+    "form_desc": "Prefer to message us directly? We typically respond within 24 hours.",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone (Optional)",
+    "interest": "Treatment Interest",
+    "select": "Select a treatment...",
+    "opt_skin": "Skin Analysis",
+    "opt_anti": "Anti-Aging Treatments",
+    "opt_laser": "Laser Therapy",
+    "opt_acne": "Acne Solutions",
+    "opt_other": "Other Inquiry",
+    "message": "Message",
+    "message_ph": "How can we help you?",
+    "submit": "Submit Inquiry"
+  },
+  "Metadata": {
+    "title": "New Bella Donna Inspired | Premium Luxury Clinic",
+    "description": "Advanced dermatology and aesthetic solutions."
+  },
+  "AdvanceMachineryPage": {
+    "title": "Advance Machinery",
+    "description": "Learn more about our advanced machinery and cutting-edge technology."
+  }
+}
