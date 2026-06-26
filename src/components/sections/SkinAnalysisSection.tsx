@@ -14,7 +14,8 @@ export function SkinAnalysisSection({ showLearnMore = false }: { showLearnMore?:
   const stepsData = [
     { 
       num: "01", 
-      ...t.raw('steps.0'),
+      title: t('steps.0.title'),
+      description: t('steps.0.description'),
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <circle cx="11" cy="11" r="8" />
@@ -26,7 +27,8 @@ export function SkinAnalysisSection({ showLearnMore = false }: { showLearnMore?:
     },
     { 
       num: "02", 
-      ...t.raw('steps.1'),
+      title: t('steps.1.title'),
+      description: t('steps.1.description'),
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 20h9" />
@@ -36,7 +38,8 @@ export function SkinAnalysisSection({ showLearnMore = false }: { showLearnMore?:
     },
     { 
       num: "03", 
-      ...t.raw('steps.2'),
+      title: t('steps.2.title'),
+      description: t('steps.2.description'),
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />

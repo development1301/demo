@@ -52,6 +52,13 @@ html.lenis, html.lenis body {
 }
 
 .animate-slide-up {
-  opacity: 0;
-  animation: slide-up 0.8s ease-out forwards;
+  animation: slide-up 0.8s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-up {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
 }
