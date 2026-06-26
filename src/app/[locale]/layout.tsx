@@ -50,7 +50,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} dir={dir}>
-      <body className={`${fontClass} antialiased selection:bg-accent-primary/30 selection:text-text-main`}>
+      <body className={`${fontClass} antialiased selection:bg-accent-primary/30 selection:text-text-main overflow-x-clip`}>
         <NextIntlClientProvider messages={messages}>
           <CursorGlow />
           <StickyWhatsApp />

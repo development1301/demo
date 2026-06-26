@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
 import { Menu, X, Globe, ChevronUp } from "lucide-react";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { useTranslations, useLocale } from 'next-intl';
@@ -104,6 +104,47 @@ export function Header() {
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+            className="md:hidden absolute top-[100%] left-0 right-0 bg-bg-surface border-b border-border-dark/50 shadow-2xl overflow-hidden"
+          >
+            <div className="px-6 py-8 flex flex-col gap-6">
+              <nav className="flex flex-col gap-2">
+                {[
+                  { name: t('nav.home'), path: "/" },
+                  { name: t('nav.about'), path: "/about" },
+                  { name: t('nav.services'), path: "/services" },
+                  { name: t('nav.advanceMachinery'), path: "/advance-machinery" },
+                  { name: t('nav.contact'), path: "/contact" }
+                ].map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.path}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-2xl font-heading text-text-main hover:text-accent-primary transition-colors py-3 border-b border-border-dark/20"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </nav>
+              <Link
+                href="/contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="mt-6 text-center w-full bg-accent-primary text-white py-4 rounded-full font-medium tracking-wide hover:bg-accent-primary-hover transition-colors shadow-md"
+              >
+                {t('bookAppointment')}
+              </Link>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.header>
   );
 }
