@@ -14,7 +14,7 @@ function AnimatedWord({ children, delay = 0, className = "" }: { children: strin
         className="inline-block"
         initial={{ y: "110%", rotate: 2 }}
         animate={{ y: 0, rotate: 0 }}
-        transition={{ duration: 1.4, delay, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 1.0, delay, ease: [0.16, 1, 0.3, 1] }}
       >
         {children}
       </motion.span>
@@ -73,7 +73,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
             className="flex items-center gap-3 mb-8 pointer-events-auto"
           >
             <span className="w-10 h-px bg-accent-primary" />
@@ -84,22 +84,22 @@ export function HeroSection() {
 
           <h1 className="font-heading font-medium tracking-tight leading-[1.05] text-text-main mb-8 pointer-events-auto">
             <div className="text-[14vw] lg:text-[110px] -ms-1 lg:-ms-2 relative z-20">
-              <AnimatedWord delay={0.2}>{t('title1')}</AnimatedWord>
+              <AnimatedWord delay={0.1}>{t('title1')}</AnimatedWord>
             </div>
             <div className="flex items-center mt-1 lg:mt-[-10px] relative z-20">
               <div className="text-[14vw] lg:text-[110px] text-accent-primary italic font-light">
-                <AnimatedWord delay={0.4}>{t('title2')}</AnimatedWord>
+                <AnimatedWord delay={0.2}>{t('title2')}</AnimatedWord>
               </div>
             </div>
             <div className="text-[9vw] lg:text-[56px] text-text-muted mt-4 lg:mt-2 relative z-10">
-              <AnimatedWord delay={0.6}>{t('title3')}</AnimatedWord>
+              <AnimatedWord delay={0.3}>{t('title3')}</AnimatedWord>
             </div>
           </h1>
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.2 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
             className="text-text-main text-sm md:text-lg font-light leading-relaxed max-w-sm lg:max-w-md mb-12 pointer-events-auto lg:bg-transparent lg:backdrop-blur-none"
           >
             {t('description')}
@@ -109,7 +109,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.4, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="pointer-events-auto"
           >
             <MagneticButton intensity={0.2}>
@@ -127,7 +127,7 @@ export function HeroSection() {
         className="absolute bottom-[15%] right-10 z-20 hidden lg:block opacity-40 mix-blend-overlay"
         initial={{ rotate: -90, opacity: 0 }}
         animate={{ rotate: 0, opacity: 0.4 }}
-        transition={{ duration: 2, delay: 1.5, ease: "easeOut" }}
+        transition={{ duration: 2, delay: 0.6, ease: "easeOut" }}
       >
         <svg width="250" height="250" viewBox="0 0 200 200" fill="none">
           <motion.path 
