@@ -51,8 +51,8 @@ export function HeroSection() {
           className="w-full h-[120%] -mt-[10%] relative"
         >
           <motion.img
-            initial={{ scale: 1.1, filter: "brightness(0.9) blur(10px)" }}
-            animate={{ scale: 1, filter: "brightness(0.95) blur(0px)" }}
+            initial={{ scale: 1.1, filter: "brightness(0.9)" }}
+            animate={{ scale: 1, filter: "brightness(0.95)" }}
             transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
             src="/hero-image.png"
             alt="Cinematic luxury treatment"

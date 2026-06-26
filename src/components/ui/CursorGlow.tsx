@@ -17,7 +17,7 @@ export function CursorGlow() {
 
   return (
     <motion.div
-      className="pointer-events-none fixed z-[100] w-96 h-96 rounded-full mix-blend-screen bg-accent-primary/10 blur-[100px] -translate-x-1/2 -translate-y-1/2"
+      className="hidden md:block pointer-events-none fixed z-[100] w-96 h-96 rounded-full mix-blend-screen bg-accent-primary/10 blur-[100px] -translate-x-1/2 -translate-y-1/2"
       animate={{
         x: mousePosition.x - 192, // 192 is half of 384px (w-96)
         y: mousePosition.y - 192,
