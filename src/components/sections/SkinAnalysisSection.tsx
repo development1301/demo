@@ -71,8 +71,8 @@ export function SkinAnalysisSection({ showLearnMore = false }: { showLearnMore?:
   const smoothActiveStep = useSpring(activeStep, { stiffness: 150, damping: 20 });
 
   return (
-    <div ref={containerRef} style={{ height: "300vh" }}>
-      <div className="sticky top-0 h-screen overflow-hidden flex flex-col bg-bg-surface">
+    <div ref={containerRef} className="h-auto md:h-[300vh]">
+      <div className="md:sticky md:top-0 h-auto md:h-screen overflow-hidden flex flex-col bg-bg-surface py-16 md:py-0">
         {/* Header */}
         <div className="pt-16 md:pt-20 pb-4 px-6 lg:px-16 shrink-0">
           <div className="max-w-[1400px] mx-auto">
@@ -109,7 +109,7 @@ export function SkinAnalysisSection({ showLearnMore = false }: { showLearnMore?:
             <div className="flex items-center gap-6 mt-8 border-t border-border-dark/30 pt-8">
               <div className="relative w-[72px] h-[72px] flex-shrink-0 group">
                 {/* Ambient Glow */}
-                <div className="absolute inset-0 bg-accent-primary/10 rounded-full blur-xl group-hover:bg-accent-primary/20 transition-colors duration-500" />
+                <div className="hidden md:block absolute inset-0 bg-accent-primary/10 rounded-full blur-xl group-hover:bg-accent-primary/20 transition-colors duration-500" />
                 
                 <svg className="w-full h-full -rotate-90 relative z-10" viewBox="0 0 72 72">
                   <defs>
@@ -156,7 +156,7 @@ export function SkinAnalysisSection({ showLearnMore = false }: { showLearnMore?:
                     strokeDasharray={circumference}
                     style={{ strokeDashoffset: dashoffset }}
                     strokeLinecap="round"
-                    filter="url(#glow)"
+                    className="drop-shadow-[0_0_8px_rgba(212,175,55,0.4)]"
                   />
                 </svg>
                 
@@ -207,8 +207,8 @@ export function SkinAnalysisSection({ showLearnMore = false }: { showLearnMore?:
           </div>
         </div>
 
-        {/* Horizontal scrolling cards */}
-        <div className="flex-1 min-h-0 relative overflow-hidden">
+        {/* Desktop: Horizontal scrolling cards */}
+        <div className="hidden md:block flex-1 min-h-0 relative overflow-hidden">
           <motion.div
             className="flex h-full"
             style={{ x: smoothX, width: "300%" }}
@@ -278,6 +278,44 @@ export function SkinAnalysisSection({ showLearnMore = false }: { showLearnMore?:
               );
             })}
           </motion.div>
+        </div>
+
+        {/* Mobile: Native horizontal scrolling cards */}
+        <div className="flex md:hidden flex-1 min-h-0 relative overflow-x-auto snap-x snap-mandatory pb-8 pt-4 gap-4 px-6 hide-scrollbar w-full">
+          {stepsData.map((step, i) => (
+            <div key={`mobile-step-${i}`} className="min-w-[85vw] snap-center flex flex-col justify-center">
+              <div className="bg-white rounded-3xl p-8 border border-border-dark shadow-lg relative overflow-hidden h-full">
+                {/* Watermark number */}
+                <div
+                  className="absolute -top-6 -end-4 text-[120px] font-heading font-bold leading-none select-none pointer-events-none"
+                  style={{
+                    background: "linear-gradient(135deg, #D4AF37 0%, #F5D76E 50%, #D4AF37 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    opacity: 0.08,
+                  }}
+                >
+                  {step.num}
+                </div>
+
+                <div className="relative z-10">
+                  <div className="w-12 h-12 rounded-xl bg-accent-primary/10 border border-accent-primary/20 flex items-center justify-center mb-6">
+                    {step.icon}
+                  </div>
+                  <div className="text-xs text-accent-primary tracking-[0.25em] uppercase font-semibold mb-2">
+                    {t('step_label', { num: step.num })}
+                  </div>
+                  <h3 className="text-xl font-heading font-medium text-text-main tracking-tight mb-4">
+                    {step.title}
+                  </h3>
+                  <div className="w-10 h-[2px] bg-accent-primary mb-4" />
+                  <p className="text-text-muted text-sm font-light leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

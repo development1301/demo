@@ -7,8 +7,8 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col w-full overflow-x-clip pt-32 pb-20">
       {/* Background ambient glow */}
-      <div className="fixed top-[-20%] left-[-10%] w-[50%] h-[50%] bg-accent-primary/5 blur-[150px] rounded-full pointer-events-none z-[-1]" />
-      <div className="fixed bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-accent-primary/5 blur-[150px] rounded-full pointer-events-none z-[-1]" />
+      <div className="hidden md:block fixed top-[-20%] left-[-10%] w-[50%] h-[50%] bg-accent-primary/5 blur-[150px] rounded-full pointer-events-none z-[-1]" />
+      <div className="hidden md:block fixed bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-accent-primary/5 blur-[150px] rounded-full pointer-events-none z-[-1]" />
       
       <section className="px-6 lg:px-16 mb-20 relative">
         <div className="max-w-[1400px] mx-auto">
@@ -63,7 +63,7 @@ export default function ContactPage() {
 
           <div className="max-w-3xl mx-auto mt-24 bg-white rounded-3xl p-10 md:p-14 border border-border-dark shadow-xl relative overflow-hidden">
             {/* Subtle background flair */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-accent-primary/5 rounded-full blur-[80px] -mr-32 -mt-32 pointer-events-none" />
+            <div className="hidden md:block absolute top-0 right-0 w-64 h-64 bg-accent-primary/5 rounded-full blur-[80px] -mr-32 -mt-32 pointer-events-none" />
             
             <div className="text-center mb-12 relative z-10">
               <h3 className="text-3xl font-heading mb-4 text-text-main">{t('form_title')}</h3>

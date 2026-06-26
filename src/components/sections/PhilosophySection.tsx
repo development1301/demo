@@ -39,12 +39,11 @@ const allImages = [
 function ParallaxImage({ image, containerProgress }: { image: typeof allImages[0], containerProgress: any }) {
   // Map container progress (0 to 1) to a Y pixel translation based on speed
   const yOffset = useTransform(containerProgress, [0, 1], [150 * image.speed, -150 * image.speed]);
-  const smoothY = useSpring(yOffset, { stiffness: 50, damping: 20 });
 
   return (
     <motion.div
       style={{ 
-        y: smoothY,
+        y: yOffset,
         marginTop: `${image.offset}px` 
       }}
       className={`w-full overflow-hidden rounded-[30px] shadow-2xl relative ${image.aspectRatio}`}
@@ -135,7 +134,7 @@ export function PhilosophySection() {
           {/* Right: Scrolling Parallax Images */}
           <div className="relative z-0">
             {/* Ambient blur behind images */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-accent-primary/5 blur-[120px] rounded-full pointer-events-none z-[-1]" />
+            <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-accent-primary/5 blur-[120px] rounded-full pointer-events-none z-[-1]" />
             
             <div className="flex flex-col gap-16 lg:gap-32 pt-10 lg:pt-32 pb-32">
               {allImages.map((img, i) => (
