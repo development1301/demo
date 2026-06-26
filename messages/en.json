@@ -1,6 +1,6 @@
 {
   "Header": {
-    "title": "New Bella Donna",
+    "title": "Demo",
     "subtitle": "Clinic",
     "nav": {
       "home": "Home",
@@ -15,7 +15,7 @@
     "subtitle": "The Art of Aesthetics",
     "title1": "Timeless",
     "title2": "Beauty",
-    "title3": "& Radiant Skin in Bella Donna",
+    "title3": "& Radiant Skin in Demo Clinic",
     "description": "Enhancing your natural features through advanced dermatology and bespoke aesthetic treatments designed for confidence, elegance, and lasting results.",
     "cta": "Book Your Consultation"
   },
@@ -142,7 +142,7 @@
       "1": {
         "name": "Sarah L.",
         "treatment": "Botox & Fillers",
-        "text": "I wanted a very natural look, and Dr. Bella delivered exactly that. Subtle, elegant, and I feel 10 years younger without looking 'done'."
+        "text": "I wanted a very natural look, and our doctors delivered exactly that. Subtle, elegant, and I feel 10 years younger without looking 'done'."
       },
       "2": {
         "name": "Fatima K.",
@@ -183,7 +183,7 @@
       "whatsapp": "WhatsApp",
       "linkedin": "LinkedIn"
     },
-    "copyright": "© {year} New Bella Donna Clinic. All rights reserved.",
+    "copyright": "© {year} Demo Clinic. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
@@ -216,7 +216,7 @@
     "submit": "Submit Inquiry"
   },
   "Metadata": {
-    "title": "New Bella Donna Inspired | Premium Luxury Clinic",
+    "title": "Demo Clinic | Premium Luxury Clinic",
     "description": "Advanced dermatology and aesthetic solutions."
   },
   "AdvanceMachineryPage": {

@@ -14,7 +14,7 @@ const testimonials = [
   {
     name: "Sarah L.",
     treatment: "Botox & Fillers",
-    text: "I wanted a very natural look, and Dr. Bella delivered exactly that. Subtle, elegant, and I feel 10 years younger without looking 'done'.",
+    text: "I wanted a very natural look, and our doctors delivered exactly that. Subtle, elegant, and I feel 10 years younger without looking 'done'.",
     rating: 5
   },
   {

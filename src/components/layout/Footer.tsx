@@ -15,7 +15,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="flex flex-col mb-8">
               <span className="font-heading text-4xl font-medium tracking-wide text-text-main">
-                New Bella Donna
+                Demo
               </span>
               <span className="font-sans text-xs tracking-[0.4em] uppercase text-accent-primary font-semibold">
                 Clinic
@@ -25,8 +25,8 @@ export function Footer() {
               {t('desc')}
             </p>
             <MagneticButton intensity={0.1}>
-              <a href="mailto:contact@belladonnaclinic.com" className="inline-flex items-center gap-2 text-xl font-heading text-text-main hover:text-accent-primary transition-colors">
-                contact@belladonnaclinic.com <ArrowUpRight size={20} />
+              <a href="mailto:contact@democlinic.com" className="inline-flex items-center gap-2 text-xl font-heading text-text-main hover:text-accent-primary transition-colors">
+                contact@democlinic.com <ArrowUpRight size={20} />
               </a>
             </MagneticButton>
           </div>

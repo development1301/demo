@@ -54,8 +54,8 @@ export default function ContactPage() {
                 </svg>
               </div>
               <h4 className="text-sm uppercase tracking-widest text-text-muted mb-4">{t('instagram')}</h4>
-              <a href="https://www.instagram.com/newbelladonnaclinic?igsh=OG5janlleHNudTMx" target="_blank" rel="noopener noreferrer" className="text-lg font-medium leading-relaxed text-text-main hover:text-accent-primary transition-colors">
-                @newbelladonnaclinic<br />
+              <a href="https://www.instagram.com/democlinic" target="_blank" rel="noopener noreferrer" className="text-lg font-medium leading-relaxed text-text-main hover:text-accent-primary transition-colors">
+                @democlinic<br />
                 {t('follow')}
               </a>
             </div>
