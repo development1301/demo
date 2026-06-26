@@ -6,18 +6,14 @@ import { Link } from "@/i18n/routing";
 import { useRef } from "react";
 import { useTranslations } from 'next-intl';
 
-// Animated word reveal component
+// Animated word reveal component (CSS only for zero-JS immediate render)
 function AnimatedWord({ children, delay = 0, className = "" }: { children: string; delay?: number; className?: string }) {
   return (
-    <span className={`inline-block overflow-hidden ${className}`}>
-      <motion.span
-        className="inline-block"
-        initial={{ y: "110%", rotate: 2 }}
-        animate={{ y: 0, rotate: 0 }}
-        transition={{ duration: 1.0, delay, ease: [0.16, 1, 0.3, 1] }}
-      >
-        {children}
-      </motion.span>
+    <span 
+      className={`inline-block animate-slide-up ${className}`}
+      style={{ animationDelay: `${delay}s` }}
+    >
+      {children}
     </span>
   );
 }
@@ -70,17 +66,15 @@ export function HeroSection() {
       >
         <div className="flex flex-col items-start w-full max-w-[600px] pt-32 lg:pt-0 pb-12 lg:pb-0 mx-auto lg:me-auto lg:ms-0 xl:ms-auto">
           
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-            className="flex items-center gap-3 mb-8 pointer-events-auto"
+          <div
+            className="flex items-center gap-3 mb-8 pointer-events-auto animate-slide-up"
+            style={{ animationDelay: "0.1s" }}
           >
             <span className="w-10 h-px bg-accent-primary" />
             <span className="text-xs font-semibold tracking-[0.3em] uppercase text-accent-primary">
               {t('subtitle')}
             </span>
-          </motion.div>
+          </div>
 
           <h1 className="font-heading font-medium tracking-tight leading-[1.05] text-text-main mb-8 pointer-events-auto">
             <div className="text-[14vw] lg:text-[110px] -ms-1 lg:-ms-2 relative z-20">
@@ -96,28 +90,24 @@ export function HeroSection() {
             </div>
           </h1>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-text-main text-sm md:text-lg font-light leading-relaxed max-w-sm lg:max-w-md mb-12 pointer-events-auto lg:bg-transparent lg:backdrop-blur-none"
+          <p
+            className="text-text-main text-sm md:text-lg font-light leading-relaxed max-w-sm lg:max-w-md mb-12 pointer-events-auto lg:bg-transparent lg:backdrop-blur-none animate-slide-up"
+            style={{ animationDelay: "0.4s" }}
           >
             {t('description')}
-          </motion.p>
+          </p>
 
           {/* CTA Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-            className="pointer-events-auto"
+          <div
+            className="pointer-events-auto animate-slide-up"
+            style={{ animationDelay: "0.5s" }}
           >
             <MagneticButton intensity={0.2}>
               <Link href="/contact" className="flex items-center gap-3 px-8 py-4 rounded-full bg-accent-primary text-white font-sans font-medium text-sm hover:bg-accent-primary-hover transition-colors shadow-lg shadow-accent-primary/20">
                 {t('cta')}
               </Link>
             </MagneticButton>
-          </motion.div>
+          </div>
 
         </div>
       </motion.div>
