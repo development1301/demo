@@ -66,7 +66,7 @@ export function SkinAnalysisSection({ showLearnMore = false }: { showLearnMore?:
 
   // Active step
   const activeStep = useTransform(scrollYProgress, (v) =>
-    v < 0.33 ? 0 : v < 0.66 ? 1 : 2
+    (v < 0.33 ? 0 : v < 0.66 ? 1 : 2) as number
   );
   const smoothActiveStep = useSpring(activeStep, { stiffness: 150, damping: 20 });
 
